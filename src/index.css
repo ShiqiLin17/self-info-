@@ -1,13 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* based styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  background: #f9f9f9;
+  color: #5c67f6;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background: #a535fa;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.content {
+  margin-top: 30px;
+}
+
+.about, .hobbies {
+  background: white;
+  padding: 16px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+.hobby {
+  margin-bottom: 16px;
+}
+
+.hobby-title {
+  margin: 0;
+}
+
+.hobby button {
+  margin-top: 4px;
+  background: #006400;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .App {
+    padding: 12px;
+  }
+
+  .header {
+    padding: 12px;
+    font-size: 20px;
+  }
+
+  .about, .hobbies {
+    padding: 14px;
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  .content {
+    margin-top: 20px;
+  }
+
+  .hobby button {
+    padding: 8px 16px;
+    font-size: 14px;
+    width: auto;
+  }
 }
